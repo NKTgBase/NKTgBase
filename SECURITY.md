@@ -1,53 +1,48 @@
-🔐 Security Policy for NKTgLaw
-This document outlines the security policy for the NKTgLaw project. We take security seriously and welcome responsible disclosures to help keep the project and its users safe.
+🔐 **Politique de sécurité pour NKTgLaw**
+Ce document décrit la politique de sécurité du projet NKTgLaw. Nous prenons la sécurité très au sérieux et accueillons les signalements responsables pour aider à protéger le projet et ses utilisateurs.
 
-🛡️ Supported Versions
-We actively maintain the latest version of NKTgLaw. Older versions may not receive security updates unless explicitly stated.
+🛡️ **Versions prises en charge**
+Nous maintenons activement la dernière version de NKTgLaw. Les versions plus anciennes peuvent ne pas recevoir de mises à jour de sécurité sauf indication explicite.
 
-Version	Supported
+| Version  | Pris en charge |
+| -------- | -------------- |
+| v0.1.0   | ✅ Oui          |
+| < v0.1.0 | ❌ Non          |
 
-v0.1.0	✅ Yes
+📣 **Signalement d’une vulnérabilité**
 
-< v0.1.0	❌ No
+Si vous découvrez une vulnérabilité de sécurité dans le code de NKTgLaw, veuillez la signaler en privé au responsable du projet :
 
-📣 Reporting a Vulnerability
+📧 [traiphieu.com@gmail.com](mailto:traiphieu.com@gmail.com)
+👤 Contact : Nguyễn Khánh Tùng
 
-If you discover a security vulnerability in the NKTgLaw codebase, please report it privately to the project maintainer:
+Veuillez inclure :
 
-📧 traiphieu.com@gmail.com 👤 Contact: Nguyễn Khánh Tùng
+* Une description claire du problème
+* Les étapes pour reproduire (si applicable)
+* L’impact potentiel ou la gravité
+* Des suggestions de mitigation (facultatif)
 
-Please include:
+Nous répondrons dans un délai de 5 jours ouvrables et travaillerons avec vous pour résoudre le problème de manière responsable.
 
-A clear description of the issue
+🤝 **Divulgation responsable**
+Nous vous demandons de :
 
-Steps to reproduce (if applicable)
+* Ne pas divulguer publiquement les vulnérabilités avant qu’elles ne soient corrigées
+* Éviter d’exploiter les vulnérabilités à des fins malveillantes
+* Respecter la vie privée et l’intégrité des autres utilisateurs et systèmes
 
-Potential impact or severity
+🔐 **Portée**
+Cette politique s’applique à :
 
-Suggested mitigation (optional)
+* Les implémentations de la bibliothèque core (C++, Rust, Go)
+* Les SDK clients (Python, Java, etc.)
+* Les API REST/gRPC
+* Les exemples d’implémentation dans examples/
+* La documentation et les matériaux de référence
 
-We will respond within 5 business days and work with you to resolve the issue responsibly.
+Merci de contribuer à maintenir NKTgLaw sûr et fiable pour tous les utilisateurs.
 
-🤝 Responsible Disclosure
-We ask that you:
+---
 
-Do not publicly disclose vulnerabilities until they are resolved
-
-Avoid exploiting vulnerabilities for malicious purposes
-
-Respect the privacy and integrity of other users and systems
-
-🔐 Scope
-This policy applies to:
-
-Core library implementations (C++, Rust, Go)
-
-Client SDKs (Python, Java, etc.)
-
-REST/gRPC APIs
-
-Example implementations in examples/
-
-Documentation and foundational materials
-
-Thank you for helping keep NKTgLaw secure and trustworthy for all users.
+Si tu veux, je peux aussi créer une version prête à copier dans un fichier Markdown en français avec les mêmes icônes et tableaux. Veux‑tu que je fasse ça ?
