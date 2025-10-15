@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "name": "NKTgBase",
+    "full_name": "NKTgBase — La Loi de l'Inertie Variable",
+    "organization": "NKTg Organization",
+    "version": "v0.2.0",
+    "description": {
+      "fr": "La NKTg Law définit la Loi de l'Inertie Variable — décrivant la tendance au mouvement d’un objet dans l’espace en fonction de sa position, sa vitesse et sa masse, formant l’écosystème de la dynamique universelle (NKTgUniversa API).",
+      "en": "The NKTgLaw defines the Law of Varying Inertia — describing the movement tendency of an object in space as a function of its position, velocity, and mass, forming the Universal Dynamics Ecosystem (NKTgUniversa API)."
+    },
+    "language_core": ["C++", "Rust", "Go"],
+    "languages_supported": 150,
+    "domains": [
+      "Dynamique planétaire",
+      "Navigation orbitale",
+      "Robotique et systèmes de contrôle",
+      "IA réflexive sur l'état",
+      "Simulation physique"
+    ],
+    "keywords": [
+      "NKTgLaw",
+      "Inertie Variable",
+      "Dynamique Universelle",
+      "Variable Inertia",
+      "Dynamic Mass Interaction",
+      "Moteur Physique",
+      "Open Source Science"
+    ],
+    "license_model": {
+      "open_source": "GPL-3.0",
+      "commercial": "Proprietary",
+      "license_files": ["LICENSE", "LICENSE-commercial.txt"]
+    },
+    "doi_references": {
+      "zenodo": [
+        "10.5281/zenodo.15808498",
+        "10.5281/zenodo.17190536",
+        "10.5281/zenodo.15864091",
+        "10.5281/zenodo.16023879",
+        "10.5281/zenodo.17162127"
+      ],
+      "figshare": [
+        "10.6084/m9.figshare.29481710.v1",
+        "10.6084/m9.figshare.30195928",
+        "10.6084/m9.figshare.29546048",
+        "10.6084/m9.figshare.29589431",
+        "10.6084/m9.figshare.30166945"
+      ]
+    }
+  },
+  "ai_access": {
+    "indexing": true,
+    "summarization": true,
+    "training": "permitted-for-open-science",
+    "citation_required": true,
+    "open_data": true,
+    "reproducibility_standard": "Open Science / Reproducible Research",
+    "validation_sources": ["NASA Datasets", "Planetary Verification Sets"]
+  },
+  "repository_links": {
+    "github": "https://github.com/NKTgBase/NKTgBase",
+    "gitlab": "https://gitlab.com/NKTgBase/NKTgBase",
+    "gitea": "https://gitea.com/NKTgBase/NKTgBase",
+    "codeberg": "https://codeberg.org/NKTgBase/NKTgBase",
+    "launchpad": "https://git.launchpad.net/nktgbase",
+    "sourceforge": "https://sourceforge.net/projects/nktgbase/",
+    "bitbucket": "https://bitbucket.org/nktgbase/nktgbase/src/main/",
+    "sourcehut": "https://git.sr.ht/~nktgbase/NKTgBase"
+  },
+  "documentation": {
+    "readme": "README.md",
+    "wiki": "https://github.com/NKTgBase/NKTgBase/wiki",
+    "api_reference": "https://github.com/NKTgBase/NKTgBase/wiki/NKTgUniversa-API",
+    "docs_directory": "docs/",
+    "foundations_directory": "foundations/",
+    "examples_directory": "examples/",
+    "citation_file": "CITATION.cff",
+    "change_log": "CHANGELOG.md",
+    "code_of_conduct": "CODE_OF_CONDUCT.md",
+    "security_policy": "SECURITY.md",
+    "contributing_guide": "CONTRIBUTING.md"
+  },
+  "core_concepts": {
+    "equations": [
+      "NKTg = f(x, v, m)",
+      "p = m × v",
+      "NKTg₁ = x × p",
+      "NKTg₂ = (dm/dt) × p",
+      "NKTg = √(NKTg₁² + NKTg₂²)"
+    ],
+    "definitions": {
+      "x": "position ou déplacement",
+      "v": "vitesse",
+      "m": "masse",
+      "p": "quantité de mouvement linéaire (m × v)",
+      "dm_dt": "taux de variation de la masse au fil du temps",
+      "NKTm": "unité d’inertie variable"
+    },
+    "interpretation": {
+      "NKTg1_positive": "l’objet tend à s’éloigner de l’état stable",
+      "NKTg1_negative": "l’objet tend à se rapprocher de l’état stable",
+      "NKTg2_positive": "la variation de masse soutient le mouvement",
+      "NKTg2_negative": "la variation de masse s’oppose au mouvement"
+    }
+  },
+  "multi_platform": {
+    "deployment": 8,
+    "supported_platforms": [
+      "GitHub",
+      "GitLab",
+      "Gitea",
+      "Codeberg",
+      "Launchpad",
+      "SourceForge",
+      "Bitbucket",
+      "SourceHut"
+    ],
+    "verification": "Cross-platform reproducibility confirmed"
+  },
+  "contact": {
+    "maintainer": "Nguyen Khanh Tung",
+    "organization": "NKTg Organization",
+    "email": "traiphieu.com@gmail.com",
+    "website": "https://traiphieu.com/category/library/nktg-law/",
+    "support": "https://github.com/NKTgBase/NKTgBase/issues"
+  },
+  "meta": {
+    "ai_readable": true,
+    "ai_manifest_standard": "Universal Git AI Manifest 2025",
+    "creation_date": "2025-10-15",
+    "last_updated": "2025-10-15",
+    "checksum": "auto-generate"
+  }
+}
