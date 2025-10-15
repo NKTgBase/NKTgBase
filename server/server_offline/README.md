@@ -1,76 +1,65 @@
-# NKTgLaw — Offline Internal Backend
+NKTgLaw — Backend interne hors ligne
+🧾 Description
 
-## 🧾 Description
+Ceci est le backend hors ligne pour NKTgLaw — une API REST légère écrite en C++ pour calculer la loi NKTg.
+Elle fonctionne localement à l’adresse http://localhost:8080 et ne nécessite pas d’accès internet, Docker, Python ou tout serveur externe.
 
-This is the offline backend for NKTgLaw — a lightweight REST API written in C++ for computing the NKTg law.  
-It runs locally at `http://localhost:8080` and does **not** require internet access, Docker, Python, or any external server.
+⚙️ Instructions de compilation (Mode Développeur)
 
----
+Si vous souhaitez compiler le serveur à partir des sources :
 
-## ⚙️ Build Instructions (Developer Mode)
-
-If you want to build the server from source:
-
-```
 mkdir build
 cd build
 cmake ..
 make
 
-```
 
-This will generate nktg.exe inside the build/ directory.
+Cela générera nktg.exe dans le répertoire build/.
 
-## ▶️ How to Run
+▶️ Comment exécuter
 
-Use the provided run_server.bat script to launch the server. It will automatically detect the correct location of nktg.exe:
+Utilisez le script fourni run_server.bat pour lancer le serveur. Il détectera automatiquement l’emplacement correct de nktg.exe :
 
-```
 @echo off
-echo === Starting NKTg Backend ===
+echo === Démarrage du backend NKTg ===
 
-REM Prefer running the prebuilt executable from the root directory
+REM Préférer l’exécutable précompilé depuis le répertoire racine
 IF EXIST ..\..\nktg.exe (
-    echo ✅ Running nktg.exe from root directory
+    echo ✅ Exécution de nktg.exe depuis le répertoire racine
     ..\..\nktg.exe
 ) ELSE IF EXIST .\build\nktg.exe (
-    echo ✅ Running nktg.exe from build directory
+    echo ✅ Exécution de nktg.exe depuis le répertoire build
     .\build\nktg.exe
 ) ELSE (
-    echo ❌ Error: nktg.exe not found in either root or build directory
+    echo ❌ Erreur : nktg.exe introuvable dans le répertoire racine ou build
 )
 
 pause
 
-```
-Once started, the server will listen at: http://localhost:8080
 
-## 🔌API Endpoint
+Une fois démarré, le serveur écoutera sur : http://localhost:8080
+
+🔌 Endpoint API
 
 POST /predict
 Content-Type: application/json
 
-Request Body:
+Corps de la requête :
 
-```
 {
-  "text": "Your input here"
+  "text": "Votre saisie ici"
 }
 
-```
 
-## Response:
+Réponse :
 
-```
 {
-  "result": "Predicted output"
+  "result": "Résultat prédit"
 }
 
-```
+🧪 Paramètres d’exemple par défaut
 
-## 🧪 Default Example Parameters
-
-The default examples use:
+Les exemples par défaut utilisent :
 
 x = 2
 
@@ -80,7 +69,7 @@ m = 5
 
 dm/dt = 0.1
 
-Computed values:
+Valeurs calculées :
 
 p = m × v
 
@@ -88,30 +77,27 @@ NKTg₁ = x × p
 
 NKTg₂ = (dm/dt) × p
 
-## 📦 Requirements
+📦 Prérequis
 
-Windows OS
+Système d’exploitation Windows
 
 CMake
 
-C++ compiler (e.g. Visual Studio, MinGW)
+Compilateur C++ (ex. Visual Studio, MinGW)
 
-No internet connection required
+Pas de connexion internet requise
 
-No Docker, no Python, no external dependencies
+Aucun Docker, Python ou dépendance externe
 
-## 📁 Related Directories
+📁 Répertoires liés
+Dossier	Objectif
+server/server_offline/	Code source C++ et scripts de compilation
+clients/	Exemples dans 150 langages de programmation
+examples/	Exemples autonomes sans serveur
+run_server.bat	Script intelligent pour lancer le mode hors ligne
+📮 Contact & Licence
 
-Folder	Purpose
-server/server_offline/	C++ source code and build scripts
-clients/	Examples in 150 programming languages
-examples/	Standalone examples without server
-run_server.bat	Smart launcher script for offline mode
+Auteur : Nguyễn Khánh Tùng
+Email : traiphieu.com@gmail.com
 
-## 📮 Contact & License
-
-Author: Nguyễn Khánh Tùng
-
-Email: traiphieu.com@gmail.com
-
-License: GPL-3.0 or commercial (see LICENSE and LICENSE-commercial.txt)
+Licence : GPL-3.0 ou commerciale (voir LICENSE et LICENSE-commercial.txt)
