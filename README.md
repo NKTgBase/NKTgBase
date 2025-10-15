@@ -93,7 +93,7 @@ Ce cadre peut refléter tout système avec état, vitesse et variation de masse 
 - **Multi-Platform Deployment:** Pour assurer l’accessibilité à long terme, la validation et l’interopérabilité globale, l’API et ses dépôts sont déployés et maintenus sur 8 grandes plateformes Git :
 
   - [GitHub](https://github.com/NKTgBase/NKTgBase)  
-  - [GitLab](https://gitlab.com/NKTgLBase/NKTBase)  
+  - [GitLab](https://gitlab.com/NKTgBase/NKTgBase)  
   - [Gitea](https://gitea.com/NKTgBase/NKTgBase)  
   - [Codeberg](https://codeberg.org/NKTgBase/Base)  
   - [Launchpad](https://git.launchpad.net/nktgBase)  
