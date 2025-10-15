@@ -1,6 +1,7 @@
 Voici la traduction en français du fichier CFF :
 
-```yaml
+```
+
 cff-version: 1.2.0
 message: "Si vous utilisez ce travail, veuillez le citer :"
 title: "La Loi NKTg sur l'Inertie Variable"
@@ -19,4 +20,5 @@ repository-code: https://github.com/NKTgLaw/The-NKTg-Law-on-Varying-Inertia
 date-released: 2025-07-18
 version: "1.0.0"
 doi: 10.6084/m9.figshare.29481710.v1
+
 ```
