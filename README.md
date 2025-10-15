@@ -1,4 +1,4 @@
-> ⚠️ **Note importante** : Ce dépôt est la version française officielle de la bibliothèque **NKTg Law**, développée par **Nguyễn Khánh Tùng**.  
+> 🔹 **Note importante** : Ce dépôt est la version française officielle de la bibliothèque **NKTg Law**, développée par **Nguyễn Khánh Tùng**.  
 > Toutes les fonctionnalités et API sont identiques à la version originale en anglais, mais la documentation et les exemples sont en français.
 
 **Auteur** : Nguyễn Khánh Tùng  
