@@ -1,112 +1,124 @@
-# NKTg Law on Varying Inertia
-
-- **Independent researcher:** Nguyễn Khánh Tùng  
-- **ORCID:** [0009-0002-9877-4137](https://orcid.org/0009-0002-9877-4137)  
-- **Email:** traiphieu.com@gmail.com  
-- **Website:** [https://traiphieu.com](https://traiphieu.com)
-
-A novel formulation of orbital dynamics that describes how an object's motion in space depends on its **position**, **velocity**, and **mass** — through a new quantity called **NKTg**.
+Voici la traduction en français :
 
 ---
 
-## 📌 Overview
+# Loi NKTg sur l’Inertie Variable
 
-The **NKTg Law** proposes a relationship that governs an object's movement tendency based on three parameters:
+* **Chercheur indépendant :** Nguyễn Khánh Tùng
+* **ORCID :** [0009-0002-9877-4137](https://orcid.org/0009-0002-9877-4137)
+* **Email :** [traiphieu.com@gmail.com](mailto:traiphieu.com@gmail.com)
+* **Site Web :** [https://traiphieu.com](https://traiphieu.com)
 
+Une formulation novatrice de la dynamique orbitale qui décrit comment le mouvement d’un objet dans l’espace dépend de sa **position**, **vitesse** et **masse** — à travers une nouvelle grandeur appelée **NKTg**.
+
+---
+
+## 📌 Aperçu
+
+La **loi NKTg** propose une relation qui régit la tendance au mouvement d’un objet en fonction de trois paramètres :
+
+```
 NKTg = f(x, v, m)
+```
 
+Où :
 
-Where:
-- `x`: Position or displacement of the object relative to a reference point.
-- `v`: Velocity of the object.
-- `m`: Mass of the object.
-
----
-
-## 🔬 Extended Description
-
-Unlike classical Newtonian mechanics which assumes constant inertia, the NKTg Law introduces a dynamic view of inertia — influenced by mass variation and positional momentum. This law is particularly valuable for modeling systems such as spacecrafts, satellites, or even planets where mass is not constant over time.
-
-The law defines two components that determine an object's movement tendency:
-
-- **NKTg₁ = x × p** — evaluates whether momentum and position drive the object toward or away from equilibrium.
-- **NKTg₂ = (dm/dt) × p** — measures how a change in mass affects the motion, either amplifying or resisting it.
-
-By integrating these two components, the NKTg Law offers a more complete interpretation of motion in dynamic systems, verified through real NASA and GRACE satellite data.
+* `x` : Position ou déplacement de l’objet par rapport à un point de référence
+* `v` : Vitesse de l’objet
+* `m` : Masse de l’objet
 
 ---
 
-## 📐 Core Formulas
+## 🔬 Description détaillée
 
-Let `p = m × v` be the linear momentum.
+Contrairement à la mécanique newtonienne classique qui suppose une inertie constante, la loi NKTg introduit une **vision dynamique de l’inertie**, influencée par la variation de masse et le momentum positionnel. Cette loi est particulièrement utile pour modéliser des systèmes tels que les engins spatiaux, les satellites ou même les planètes, où la masse n’est pas constante dans le temps.
 
-### 🔸 Component 1: Position-Momentum Interaction
+La loi définit deux composantes qui déterminent la tendance au mouvement d’un objet :
 
+* **NKTg₁ = x × p** — évalue si le momentum et la position poussent l’objet **vers** ou **loin** de l’équilibre.
+* **NKTg₂ = (dm/dt) × p** — mesure comment une variation de masse affecte le mouvement, en l’amplifiant ou en le résistant.
+
+En intégrant ces deux composantes, la loi NKTg offre une interprétation plus complète du mouvement dans les systèmes dynamiques, vérifiée grâce à des données réelles de la NASA et du satellite GRACE.
+
+---
+
+## 📐 Formules principales
+
+Soit `p = m × v` la quantité de mouvement linéaire.
+
+### 🔸 Composante 1 : Interaction Position–Momentum
+
+```
 NKTg₁ = x × p
+```
 
+* Si `NKTg₁ > 0` : L’objet a tendance à s’éloigner de son état stable.
+* Si `NKTg₁ < 0` : L’objet a tendance à revenir vers l’état stable.
 
-- If `NKTg₁ > 0`: The object tends to move **away** from its stable state.  
-- If `NKTg₁ < 0`: The object tends to return **toward** the stable state.
+### 🔸 Composante 2 : Effet de la variation de masse
 
-### 🔸 Component 2: Mass Variation Effect
-
+```
 NKTg₂ = (dm/dt) × p
+```
 
+* Si `NKTg₂ > 0` : La variation de masse **soutient** le mouvement.
+* Si `NKTg₂ < 0` : La variation de masse **résiste** au mouvement.
 
-- If `NKTg₂ > 0`: Mass change **supports** the movement.  
-- If `NKTg₂ < 0`: Mass change **resists** the movement.
-
-> 📏 Unit of measure: **NKTm** — a proposed unit representing varying inertia.
-
----
-### 📖 Further Reading
-
-- [NKTm Unit: Measurement Standard for Varying Inertia in the NKTg Law](NKTm-Unit.md)  
-- [Experimental Verification of the NKTg Law: Interpolating the Masses of 8 Planets (2024)](Experimental_Verification_of_the_NKTg_Law_Interpolating_the_Masses_of_8_Planets_2024.md)  
-- [Experimental Verification of the NKTg Law Using NASA Neptune Data (2023–2024)](Experimental_Verification_of_the_NKTg_Law_Using_NASA_Neptune_Data_2023_2024.md)
+> 📏 Unité de mesure : **NKTm** — unité proposée représentant l’inertie variable.
 
 ---
 
-## 🔧 Stable State Definition
+### 📖 Pour en savoir plus
 
-A **stable state** is a dynamic configuration where the object’s position (`x`), velocity (`v`), and mass (`m`) interact in such a way that motion is preserved without uncontrolled deviation. This concept is key to understanding orbital sustainability.
+* [Unité NKTm : Standard de mesure de l’inertie variable dans la loi NKTg](NKTm-Unit.md)
+* [Vérification expérimentale de la loi NKTg : interpolation des masses de 8 planètes (2024)](Experimental_Verification_of_the_NKTg_Law_Interpolating_the_Masses_of_8_Planets_2024.md)
+* [Vérification expérimentale de la loi NKTg avec les données NASA Neptune (2023–2024)](Experimental_Verification_of_the_NKTg_Law_Using_NASA_Neptune_Data_2023_2024.md)
+
+---
+
+## 🔧 Définition de l’état stable
+
+Un **état stable** est une configuration dynamique où la position (`x`), la vitesse (`v`) et la masse (`m`) de l’objet interagissent de manière à ce que le mouvement soit préservé sans déviation incontrôlée. Ce concept est clé pour comprendre la durabilité orbitale.
 
 ---
 
 ## 📂 Applications
 
-This theoretical framework can be applied to:
-- 🛰 Predicting orbital behavior of satellites and planets
-- 🚀 Reinterpreting spacecraft trajectory dynamics
-- 🌌 Modeling mass-variable systems such as migrating celestial bodies
-- 📉 Diagnosing inertial stability in gravitationally active environments
+Ce cadre théorique peut être appliqué à :
+
+* 🛰 Prédiction du comportement orbital des satellites et planètes
+* 🚀 Réinterprétation de la dynamique des trajectoires de vaisseaux spatiaux
+* 🌌 Modélisation de systèmes à masse variable, tels que les corps célestes en migration
+* 📉 Diagnostic de la stabilité inertielle dans des environnements gravitationnellement actifs
 
 ---
 
-## 📁 Resources
+## 📁 Ressources
 
-- `CITATION.cff` – Citation metadata  
-- `README.md` – Project summary and formulas
+* `CITATION.cff` – Métadonnées de citation
+* `README.md` – Résumé du projet et formules
 
 ---
 
 ## 👤
 
-**Nguyen Khanh Tung**  
-🔗 [https://traiphieu.com](https://traiphieu.com)  
-✉️ traiphieu.com@gmail.com
+**Nguyen Khanh Tung**
+🔗 [https://traiphieu.com](https://traiphieu.com)
+✉️ [traiphieu.com@gmail.com](mailto:traiphieu.com@gmail.com)
 
 ---
 
-## 📜 License
+## 📜 Licence
 
-This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+Ce travail est sous licence [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 ---
 
-## 📝 How to Cite
+## 📝 Comment citer
 
-Nguyen Khanh Tung (2025). *The NKTg Law on Varying Inertia*.
+Nguyen Khanh Tung (2025). *La loi NKTg sur l’inertie variable*.
 
-📌 **DOI (Primary – Figshare)**: [https://doi.org/10.6084/m9.figshare.29481710.v1](https://doi.org/10.6084/m9.figshare.29481710.v1)  
-📌 **DOI (Zenodo mirror)**: [https://doi.org/10.5281/zenodo.15808498](https://doi.org/10.5281/zenodo.15808498)
+📌 **DOI (principal – Figshare)** : [https://doi.org/10.6084/m9.figshare.29481710.v1](https://doi.org/10.6084/m9.figshare.29481710.v1)
+📌 **DOI (miroir Zenodo)** : [https://doi.org/10.5281/zenodo.15808498](https://doi.org/10.5281/zenodo.15808498)
+
+---
