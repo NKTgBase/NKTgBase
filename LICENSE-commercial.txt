@@ -1,62 +1,71 @@
-NKTgLaw Commercial License
+Voici la traduction en français de votre texte :
+
+---
+
+# Licence Commerciale NKTgLaw
+
 ==========================
 
 Copyright (c) 2025 Nguyễn Khánh Tùng
 
-All rights reserved.
+Tous droits réservés.
 
-This file outlines the terms under which you may obtain a commercial license to use
-the NKTgLaw software. By obtaining a commercial license, you are granted the rights
-to use, copy, modify, and distribute the software under the conditions described below.
+Ce fichier décrit les conditions selon lesquelles vous pouvez obtenir une licence commerciale pour utiliser le logiciel NKTgLaw. En obtenant une licence commerciale, vous recevez le droit d’utiliser, copier, modifier et distribuer le logiciel selon les conditions décrites ci-dessous.
 
-1. Grant of License
--------------------
-Subject to payment of the applicable license fees and compliance with the terms of this
-Agreement, the Licensor grants the Licensee a non-exclusive, non-transferable, worldwide
-license to use NKTgLaw for commercial purposes without the obligation to release modifications
-or derivatives as open source.
-
-2. Restrictions
----------------
-- You may not redistribute the software except as allowed under this commercial license.
-- You may not sublicense the software without explicit permission from the Licensor.
-- The software may not be used in a manner that violates applicable laws.
-
-3. Fees and Payment
-------------------
-Commercial use requires a license fee, which is agreed upon between the Licensor and
-Licensee prior to distribution or deployment. Contact the Licensor for licensing terms
-and payment details.
-
-4. Support and Maintenance
---------------------------
-The Licensor may provide commercial support, updates, and maintenance services according
-to separate agreements.
-
-5. Disclaimer of Warranty
--------------------------
-The software is provided "as is" without warranty of any kind, either express or implied,
-including but not limited to warranties of merchantability or fitness for a particular purpose.
-
-6. Limitation of Liability
---------------------------
-In no event shall the Licensor be liable for any damages arising from the use of the software,
-including direct, indirect, incidental, or consequential damages.
-
-7. Termination
---------------
-This license is effective until terminated. It will terminate automatically without notice
-if you fail to comply with any of the terms herein. Upon termination, you must destroy all
-copies of the software.
-
-8. Contact
-----------
-For commercial licensing inquiries, please contact:
-
-Nguyễn Khánh Tùng  
-Email: traiphieu.com@gmail.com  
-Website: https://traiphieu.com
+## 1. Octroi de Licence
 
 ---
 
-By using NKTgLaw under this commercial license, you agree to be bound by the terms above.
+Sous réserve du paiement des frais de licence applicables et du respect des termes de cet Accord, le Concédant accorde au Licencié une licence mondiale, non exclusive et non transférable pour utiliser NKTgLaw à des fins commerciales, sans obligation de publier les modifications ou dérivés en open source.
+
+## 2. Restrictions
+
+---
+
+* Vous ne pouvez pas redistribuer le logiciel sauf dans le cadre de cette licence commerciale.
+* Vous ne pouvez pas accorder de sous-licence sur le logiciel sans l’autorisation expresse du Concédant.
+* Le logiciel ne peut être utilisé d’une manière qui viole les lois applicables.
+
+## 3. Frais et Paiement
+
+---
+
+L’utilisation commerciale nécessite le paiement d’un droit de licence, convenu entre le Concédant et le Licencié avant toute distribution ou déploiement. Contactez le Concédant pour connaître les conditions de licence et les modalités de paiement.
+
+## 4. Support et Maintenance
+
+---
+
+Le Concédant peut fournir des services de support commercial, de mises à jour et de maintenance selon des accords séparés.
+
+## 5. Exclusion de Garantie
+
+---
+
+Le logiciel est fourni « tel quel », sans aucune garantie, expresse ou implicite, y compris, mais sans s’y limiter, les garanties de qualité marchande ou d’adaptation à un usage particulier.
+
+## 6. Limitation de Responsabilité
+
+---
+
+En aucun cas le Concédant ne pourra être tenu responsable de tout dommage résultant de l’utilisation du logiciel, y compris les dommages directs, indirects, accessoires ou consécutifs.
+
+## 7. Résiliation
+
+---
+
+Cette licence reste en vigueur jusqu’à sa résiliation. Elle sera automatiquement résiliée sans préavis si vous ne respectez pas l’une des conditions ci-dessus. Après résiliation, vous devez détruire toutes les copies du logiciel.
+
+## 8. Contact
+
+---
+
+Pour toute demande de licence commerciale, veuillez contacter :
+
+Nguyễn Khánh Tùng
+Email : [traiphieu.com@gmail.com](mailto:traiphieu.com@gmail.com)
+Site Web : [https://traiphieu.com](https://traiphieu.com)
+
+---
+
+En utilisant NKTgLaw dans le cadre de cette licence commerciale, vous acceptez d’être lié par les conditions ci-dessus.
