@@ -99,7 +99,7 @@ Ce cadre peut refléter tout système avec état, vitesse et variation de masse 
   - [Launchpad](https://launchpad.net/nktgbase)  
   - [SourceForge](https://sourceforge.net/projects/nktgBase/)  
   - [Bitbucket](https://bitbucket.org/nktgBase/nktgBase/src/main/)  
-  - [SourceHut](https://git.sr.ht/~nktgBase/NKTgBase)  
+  - [SourceHut](https://git.sr.ht/~nktgbase/nktgbase)  
 
 - **Dual-license model:** GPL-3.0 (open source) / Commercial license (enterprise-grade).
 
