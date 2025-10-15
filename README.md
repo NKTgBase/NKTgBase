@@ -1,3 +1,11 @@
+> ⚠️ **Note importante** : Ce dépôt est la version française officielle de la bibliothèque **NKTg Law**, développée par **Nguyễn Khánh Tùng**.  
+> Toutes les fonctionnalités et API sont identiques à la version originale en anglais, mais la documentation et les exemples sont en français.
+
+**Auteur** : Nguyễn Khánh Tùng  
+**Version originale (anglais)** : NKTgLaw  
+**Version française** : NKTgBase
+
+---
 
 Core library & API pour la NKTg Law (Nguyen Khanh Tung). Inclut l’implémentation de base, REST/gRPC API, et plus de 150 wrappers clients
 
