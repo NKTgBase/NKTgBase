@@ -96,14 +96,14 @@ This framework can reflect any system with state, velocity, and mass variation �
 - **Experimental verification:** Consistent results with **planetary and NASA datasets**  Detailed datasets and DOI references for these verifications are provided in the **Foundations** section.
 - **Multi-Platform Deployment** To ensure long-term accessibility, validation, and global interoperability, the API and its repositories are deployed and maintained across 8 major Git platforms:
 
-  - [GitHub](https://github.com/NKTgLaw/NKTgLaw)  
-  - [GitLab](https://gitlab.com/NKTgLaw/NKTgLaw)  
-  - [Gitea](https://gitea.com/NKTgLaw/NKTgLaw)  
-  - [Codeberg](https://codeberg.org/NKTgLaw/NKTgLaw)  
-  - [Launchpad](https://git.launchpad.net/nktglaw)  
-  - [SourceForge](https://sourceforge.net/projects/nktglaw/)  
-  - [Bitbucket](https://bitbucket.org/nktglaw/nktglaw/src/main/)  
-  - [SourceHut](https://git.sr.ht/~nktglaw/NKTgLaw)
+  - [GitHub](https://github.com/NKTgBase/NKTgBase)  
+  - [GitLab](https://gitlab.com/NKTgLBase/NKTBase)  
+  - [Gitea](https://gitea.com/NKTgBase/NKTgBase)  
+  - [Codeberg](https://codeberg.org/NKTgBase/Base)  
+  - [Launchpad](https://git.launchpad.net/nktgBase)  
+  - [SourceForge](https://sourceforge.net/projects/nktgBase/)  
+  - [Bitbucket](https://bitbucket.org/nktgBase/nktgBase/src/main/)  
+  - [SourceHut](https://git.sr.ht/~nktgBase/NKTgBase)
 
 - **Dual-license model:** GPL-3.0 (open source) / Commercial license (enterprise-grade).
 
@@ -117,10 +117,10 @@ This framework can reflect any system with state, velocity, and mass variation �
 
 Detailed documentation for the **NKTgLaw Library** is maintained in the project wiki:
 
--  [API Guide](https://github.com/NKTgLaw/NKTgLaw/wiki/API-Guide)
--  [Global Physics Standard API](https://github.com/NKTgLaw/NKTgLaw/wiki/Global-Physics-Standard-API)
--  [Library Structure](https://github.com/NKTgLaw/NKTgLaw/wiki/NKTgLaw-Library-Structure)
--  [Theory](https://github.com/NKTgLaw/NKTgLaw/wiki/Theory)
+- API Guide
+- Global Physics Standard API
+- Library Structure
+- Theory
 
 Visit the wiki for detailed explanations, examples, and API references.
 
@@ -159,7 +159,7 @@ The `foundations/` directory contains theoretical materials and supporting docum
 - **Wiki.md**: consolidated wiki documentation  
 - **Index.md**: structured entry point for foundational texts
   
-👉 Browse the full collection here: [foundations/](foundations/)
+👉 Browse the full collection here: **foundations**
 
 ---
 
@@ -167,7 +167,7 @@ The `foundations/` directory contains theoretical materials and supporting docum
 
 This repository contains **150 implementations** of the NKTg Law, one for each programming language.  
 
-- All code snippets are stored in the [`examples/`](./examples) directory.  
+- All code snippets are stored in the **examples** directory.  
 - Each file is self-contained and demonstrates the calculation of:
 
 ```
@@ -182,7 +182,7 @@ NKTg₂ = (dm/dt) * p
 
 - Default parameters: `x=2, v=3, m=5, dm_dt=0.1`
 
-👉 Browse the full list here: [examples/](./examples)
+👉 Browse the full list here: **examples**
 
 **Examples include (but are not limited to):**
 
@@ -199,10 +199,10 @@ NKTg₂ = (dm/dt) * p
 ## ⚡ Quick Start
 
 - NKTgLaw supports both **offline** and **online** modes.  
-  - For **maximum performance and full precision**, we recommend using the **offline backend**, located at [`server/server_offline`](https://github.com/NKTgLaw/NKTgLaw/tree/main/server/server_offline).  
-  - For quick integration or remote access, you can use the **online client wrappers** under [`clients/`](https://github.com/NKTgLaw/NKTgLaw/tree/main/clients).
+  - For **maximum performance and full precision**, we recommend using the **offline backend**, located at **server/server_offline**
+  - For quick integration or remote access, you can use the **online client wrappers** under **clients/**.
 
-👉 You can also explore the [`examples/`](https://github.com/NKTgLaw/NKTgLaw/tree/main/examples) directory for 150 standalone implementations.
+👉 You can also explore the **examples/** directory for 150 standalone implementations.
 
 - ### Assembly
 
@@ -229,7 +229,7 @@ Message($"p={p} NKTg1={NKTg1} NKTg2={NKTg2}");
 
 ```
   
-👉 Use the provided [client wrappers](https://github.com/NKTgLaw/NKTgLaw/tree/main/clients) to quickly test the NKTg Law.
+👉 Use the provided **client wrappers** to quickly test the NKTg Law.
 
 - ### Python Client
 
