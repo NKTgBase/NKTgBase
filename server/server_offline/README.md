@@ -1,25 +1,36 @@
-NKTgLaw — Backend interne hors ligne
-🧾 Description
+Voici la traduction en français :
 
-Ceci est le backend hors ligne pour NKTgLaw — une API REST légère écrite en C++ pour calculer la loi NKTg.
-Elle fonctionne localement à l’adresse http://localhost:8080 et ne nécessite pas d’accès internet, Docker, Python ou tout serveur externe.
+---
 
-⚙️ Instructions de compilation (Mode Développeur)
+# NKTgLaw — Backend interne hors ligne
+
+## 🧾 Description
+
+Ceci est le backend hors ligne pour **NKTgLaw** — une API REST légère écrite en C++ pour calculer la loi NKTg.
+Elle fonctionne localement à l’adresse `http://localhost:8080` et **ne nécessite pas** d’accès internet, Docker, Python ou tout serveur externe.
+
+---
+
+## ⚙️ Instructions de compilation (Mode Développeur)
 
 Si vous souhaitez compiler le serveur à partir des sources :
 
+```
 mkdir build
 cd build
 cmake ..
 make
+```
 
+Cela générera **nktg.exe** dans le répertoire `build/`.
 
-Cela générera nktg.exe dans le répertoire build/.
+---
 
-▶️ Comment exécuter
+## ▶️ Comment exécuter
 
-Utilisez le script fourni run_server.bat pour lancer le serveur. Il détectera automatiquement l’emplacement correct de nktg.exe :
+Utilisez le script fourni **run_server.bat** pour lancer le serveur. Il détectera automatiquement l’emplacement correct de **nktg.exe** :
 
+```
 @echo off
 echo === Démarrage du backend NKTg ===
 
@@ -35,69 +46,75 @@ IF EXIST ..\..\nktg.exe (
 )
 
 pause
+```
 
+Une fois démarré, le serveur écoutera sur : [http://localhost:8080](http://localhost:8080)
 
-Une fois démarré, le serveur écoutera sur : http://localhost:8080
+---
 
-🔌 Endpoint API
+## 🔌 Endpoint API
 
-POST /predict
+**POST /predict**
 Content-Type: application/json
 
 Corps de la requête :
 
+```
 {
   "text": "Votre saisie ici"
 }
-
+```
 
 Réponse :
 
+```
 {
   "result": "Résultat prédit"
 }
+```
 
-🧪 Paramètres d’exemple par défaut
+---
+
+## 🧪 Paramètres d’exemple par défaut
 
 Les exemples par défaut utilisent :
 
-x = 2
-
-v = 3
-
-m = 5
-
-dm/dt = 0.1
+* x = 2
+* v = 3
+* m = 5
+* dm/dt = 0.1
 
 Valeurs calculées :
 
-p = m × v
+* p = m × v
+* NKTg₁ = x × p
+* NKTg₂ = (dm/dt) × p
 
-NKTg₁ = x × p
+---
 
-NKTg₂ = (dm/dt) × p
+## 📦 Prérequis
 
-📦 Prérequis
+* Système d’exploitation Windows
+* CMake
+* Compilateur C++ (ex. Visual Studio, MinGW)
+* Pas de connexion internet requise
+* Aucun Docker, Python ou dépendance externe
 
-Système d’exploitation Windows
+---
 
-CMake
+## 📁 Répertoires liés
 
-Compilateur C++ (ex. Visual Studio, MinGW)
+| Dossier                | Objectif                                          |
+| ---------------------- | ------------------------------------------------- |
+| server/server_offline/ | Code source C++ et scripts de compilation         |
+| clients/               | Exemples dans 150 langages de programmation       |
+| examples/              | Exemples autonomes sans serveur                   |
+| run_server.bat         | Script intelligent pour lancer le mode hors ligne |
 
-Pas de connexion internet requise
+---
 
-Aucun Docker, Python ou dépendance externe
+## 📮 Contact & Licence
 
-📁 Répertoires liés
-Dossier	Objectif
-server/server_offline/	Code source C++ et scripts de compilation
-clients/	Exemples dans 150 langages de programmation
-examples/	Exemples autonomes sans serveur
-run_server.bat	Script intelligent pour lancer le mode hors ligne
-📮 Contact & Licence
-
-Auteur : Nguyễn Khánh Tùng
-Email : traiphieu.com@gmail.com
-
-Licence : GPL-3.0 ou commerciale (voir LICENSE et LICENSE-commercial.txt)
+**Auteur :** Nguyễn Khánh Tùng
+**Email :** [traiphieu.com@gmail.com](mailto:traiphieu.com@gmail.com)
+**Licence :** GPL-3.0 ou commerciale (voir LICENSE et LICENSE-commercial.txt)
