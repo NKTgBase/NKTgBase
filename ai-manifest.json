@@ -54,22 +54,25 @@
     "citation_required": true,
     "open_data": true,
     "reproducibility_standard": "Science Ouverte / Recherche Reproductible",
-    "validation_sources": ["Jeux de données NASA", "Jeux de vérification planétaires"]
+    "validation_sources": [
+      "Jeux de données NASA",
+      "Jeux de vérification planétaires"
+    ]
   },
   "repository_links": {
     "github": "https://github.com/NKTgBase/NKTgBase",
     "gitlab": "https://gitlab.com/NKTgBase/NKTgBase",
     "gitea": "https://gitea.com/NKTgBase/NKTgBase",
     "codeberg": "https://codeberg.org/NKTgBase/NKTgBase",
-    "launchpad": "https://git.launchpad.net/nktgbase",
+    "launchpad": "https://launchpad.net/nktgbase",
     "sourceforge": "https://sourceforge.net/projects/nktgbase/",
     "bitbucket": "https://bitbucket.org/nktgbase/nktgbase/src/main/",
-    "sourcehut": "https://git.sr.ht/~nktgbase/NKTgBase"
+    "sourcehut": "https://git.sr.ht/~nktgbase/nktgbase"
   },
   "documentation": {
     "readme": "README.md",
-    "wiki": "https://github.com/NKTgBase/NKTgBase/wiki",
-    "api_reference": "https://github.com/NKTgBase/NKTgBase/wiki/NKTgUniversa-API",
+    "wiki": "wiki/",
+    "api_reference": "docs/NKTgUniversa-API.md",
     "docs_directory": "docs/",
     "foundations_directory": "foundations/",
     "examples_directory": "examples/",
@@ -118,7 +121,7 @@
   },
   "contact": {
     "maintainer": "Nguyen Khanh Tung",
-    "organization": "NKTg Organization",
+    "organization": "NKTg Law",
     "email": "traiphieu.com@gmail.com",
     "website": "https://traiphieu.com/category/library/nktg-law/",
     "support": "https://github.com/NKTgBase/NKTgBase/issues"
@@ -126,8 +129,8 @@
   "meta": {
     "ai_readable": true,
     "ai_manifest_standard": "Universal Git AI Manifest 2025",
-    "creation_date": "2025-10-15",
-    "last_updated": "2025-10-15",
-    "checksum": "auto-generate"
+    "creation_date": "2025-10-15T00:00:00Z",
+    "last_updated": "2025-10-16T00:00:00Z",
+    "checksum": "auto-generated-on-save"
   }
 }
