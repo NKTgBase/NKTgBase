@@ -6,8 +6,7 @@
     "organization": "NKTg Organization",
     "version": "v0.2.0",
     "description": {
-      "fr": "La NKTg Law définit la Loi de l'Inertie Variable — décrivant la tendance au mouvement d’un objet dans l’espace en fonction de sa position, sa vitesse et sa masse, formant l’écosystème de la dynamique universelle (NKTgUniversa API).",
-      "en": "The NKTgLaw defines the Law of Varying Inertia — describing the movement tendency of an object in space as a function of its position, velocity, and mass, forming the Universal Dynamics Ecosystem (NKTgUniversa API)."
+      "fr": "La NKTg Law définit la Loi de l'Inertie Variable — décrivant la tendance au mouvement d’un objet dans l’espace en fonction de sa position, sa vitesse et sa masse, formant l’écosystème de la dynamique universelle (NKTgUniversa API)."
     },
     "language_core": ["C++", "Rust", "Go"],
     "languages_supported": 150,
@@ -22,14 +21,13 @@
       "NKTgLaw",
       "Inertie Variable",
       "Dynamique Universelle",
-      "Variable Inertia",
-      "Dynamic Mass Interaction",
+      "Interaction de Masse Dynamique",
       "Moteur Physique",
-      "Open Source Science"
+      "Science Open Source"
     ],
     "license_model": {
       "open_source": "GPL-3.0",
-      "commercial": "Proprietary",
+      "commercial": "Propriétaire",
       "license_files": ["LICENSE", "LICENSE-commercial.txt"]
     },
     "doi_references": {
@@ -52,11 +50,11 @@
   "ai_access": {
     "indexing": true,
     "summarization": true,
-    "training": "permitted-for-open-science",
+    "training": "autorisé-pour-la-science-ouverte",
     "citation_required": true,
     "open_data": true,
-    "reproducibility_standard": "Open Science / Reproducible Research",
-    "validation_sources": ["NASA Datasets", "Planetary Verification Sets"]
+    "reproducibility_standard": "Science Ouverte / Recherche Reproductible",
+    "validation_sources": ["Jeux de données NASA", "Jeux de vérification planétaires"]
   },
   "repository_links": {
     "github": "https://github.com/NKTgBase/NKTgBase",
@@ -83,7 +81,7 @@
   },
   "core_concepts": {
     "equations": [
-      "NKTg = f(x, v, m)",
+      "NKTg = f(x, v, m) // fonction de position, vitesse, masse",
       "p = m × v",
       "NKTg₁ = x × p",
       "NKTg₂ = (dm/dt) × p",
@@ -116,7 +114,7 @@
       "Bitbucket",
       "SourceHut"
     ],
-    "verification": "Cross-platform reproducibility confirmed"
+    "verification": "Reproductibilité multiplateforme confirmée"
   },
   "contact": {
     "maintainer": "Nguyen Khanh Tung",
