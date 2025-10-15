@@ -1,457 +1,263 @@
-# 🧭 Theory Overview
-
-The **NKTg Law on Varying Inertia** is a novel physical law that connects an object’s motion with three interacting variables: **position (x)**, **velocity (v)**, and **mass (m)**.
-
-### 🔍 Why it matters
-
-In classical mechanics, inertia is treated as a constant property. However, real-world systems like spacecraft, satellites, and celestial bodies often experience **variable mass**, especially during fuel consumption or material loss.
-
-The NKTg Law introduces two components that measure the object's **tendency to move or stabilize**, even when mass changes:
-
-- `NKTg₁ = x × p`  
-  → Describes whether the object is moving toward or away from equilibrium.
-- `NKTg₂ = (dm/dt) × p`  
-  → Describes whether mass change is helping or resisting the motion.
-
-Together, they provide a dynamic picture of motion that classical Newtonian mechanics cannot fully capture.
+Voici la traduction complète en français :
 
 ---
 
-### 📌 Scope of the Law
+# 🧭 Aperçu Théorique
 
-The NKTg Law is useful in:
-- Analyzing orbital stability of satellites or planets
-- Reassessing spacecraft control in fuel-losing systems
-- Modeling gravitational interactions with mass variation
-- Interpolating planetary motion data with higher accuracy
+La **Loi NKTg sur l’Inertie Variable** est une loi physique novatrice qui relie le mouvement d’un objet à trois variables interactives : **position (x)**, **vitesse (v)** et **masse (m)**.
+
+### 🔍 Pourquoi c’est important
+
+En mécanique classique, l’inertie est considérée comme une propriété constante. Cependant, dans la réalité, des systèmes comme les engins spatiaux, satellites ou corps célestes subissent souvent une **variation de masse**, notamment lors de la consommation de carburant ou de pertes de matière.
+
+La loi NKTg introduit deux composantes qui mesurent la **tendance d’un objet à se déplacer ou se stabiliser**, même lorsque la masse change :
+
+* `NKTg₁ = x × p`
+  → Décrit si l’objet se déplace vers ou loin de l’équilibre.
+* `NKTg₂ = (dm/dt) × p`
+  → Décrit si la variation de masse favorise ou résiste au mouvement.
+
+Ensemble, elles offrent une vision dynamique du mouvement que la mécanique newtonienne classique ne peut pas entièrement capturer.
 
 ---
 
-🧠 **Next:** [[Core Formulas]]
+### 📌 Portée de la Loi
 
-# 📐 Core Formulas of the NKTg Law
+La loi NKTg est utile pour :
 
-This page details the core mathematical expressions of the **NKTg Law on Varying Inertia**, which extends classical mechanics to account for dynamic changes in mass and its impact on motion.
+* Analyser la stabilité orbitale des satellites ou planètes
+* Réévaluer le contrôle des engins spatiaux en cas de perte de carburant
+* Modéliser les interactions gravitationnelles avec variation de masse
+* Interpoler les données de mouvement planétaire avec plus de précision
 
 ---
 
-## 🔸 Fundamental Expression
+🧠 **Prochain :** [[Formules de Base]]
 
-The general form of the NKTg Law is:
+# 📐 Formules de Base de la Loi NKTg
 
+Cette section détaille les expressions mathématiques centrales de la **Loi NKTg sur l’Inertie Variable**, qui étend la mécanique classique pour prendre en compte les changements dynamiques de masse et leur impact sur le mouvement.
+
+---
+
+## 🔸 Expression Fondamentale
+
+La forme générale de la loi NKTg :
+
+```
 NKTg = f(x, v, m)
+```
 
-markdown
-Copy
-Edit
+Où :
 
-Where:
-- `x`: Position or displacement relative to a reference point
-- `v`: Velocity of the object
-- `m`: Mass of the object
+* `x` : Position ou déplacement par rapport à un point de référence
+* `v` : Vitesse de l’objet
+* `m` : Masse de l’objet
 
-Linear momentum is defined as:
+La quantité de mouvement linéaire est définie par :
 
+```
 p = m × v
-
-yaml
-Copy
-Edit
+```
 
 ---
 
-## 🔸 Component 1: Position-Momentum Interaction
+## 🔸 Composante 1 : Interaction Position–Quantité de mouvement
 
+```
 NKTg₁ = x × p = x × (m × v)
+```
 
-markdown
-Copy
-Edit
+Cette composante décrit l’interaction entre position et quantité de mouvement. Elle indique si l’objet :
 
-This term describes the interaction between position and momentum. It measures whether the object is:
+* **S’éloigne** de l’équilibre si `NKTg₁ > 0`
+* **Revient vers** l’équilibre si `NKTg₁ < 0`
 
-- **Moving away** from equilibrium if `NKTg₁ > 0`
-- **Returning toward** equilibrium if `NKTg₁ < 0`
-
-The unit of `NKTg₁` is `[meter × kg·m/s]` = `kg·m²/s`, proposed as **NKTm**.
+L’unité de `NKTg₁` est `[mètre × kg·m/s]` = `kg·m²/s`, proposée comme **NKTm**.
 
 ---
 
-## 🔸 Component 2: Mass Variation Effect
+## 🔸 Composante 2 : Effet de la variation de masse
 
+```
 NKTg₂ = (dm/dt) × p
+```
 
-yaml
-Copy
-Edit
+Cette composante quantifie comment la variation de masse affecte le mouvement :
 
-This component quantifies how mass variation affects motion:
+* `dm/dt` : taux de variation de la masse au fil du temps
+* `p` : quantité de mouvement linéaire
 
-- `dm/dt`: The rate of change in mass over time
-- `p`: Linear momentum
+### Interprétation :
 
-Interpretation:
+* `NKTg₂ > 0` → la variation de masse **favorise** le mouvement
+* `NKTg₂ < 0` → la variation de masse **résiste** au mouvement
 
-- If `NKTg₂ > 0`: Mass change **supports** motion
-- If `NKTg₂ < 0`: Mass change **resists** motion
-
-Unit: `[kg/s] × [kg·m/s]` = `kg²·m/s²`
+Unité : `[kg/s] × [kg·m/s]` = `kg²·m/s²`
 
 ---
 
-## 📏 Unit: NKTm
+## 📏 Unité : NKTm
 
-A new proposed unit, **NKTm**, is used to represent the measure of varying inertia in a system. It reflects both spatial and temporal contributions to inertial change, beyond Newtonian assumptions.
-
----
-
-📘 **Next:** [[Stability Criteria]]
-
-# 🧱 Stability Criteria in the NKTg Law
-
-In the NKTg framework, a **stable state** is a condition in which the position (`x`), velocity (`v`), and mass (`m`) of an object interact to preserve a controlled and sustainable motion.
-
-This page explains how the components `NKTg₁` and `NKTg₂` help determine whether an object is moving **toward** or **away from** such stability.
+Une nouvelle unité proposée, **NKTm**, est utilisée pour représenter la mesure de l’inertie variable dans un système. Elle reflète à la fois les contributions spatiales et temporelles au changement inertiel, au-delà des hypothèses newtoniennes.
 
 ---
 
-## 🔸 Defining Stability
+📘 **Prochain :** [[Critères de Stabilité]]
 
-A system is considered **stable** if the net influence of both NKTg components leads to:
+# 🧱 Critères de Stabilité dans la Loi NKTg
 
-- Minimal uncontrolled drift or deviation
-- Retention of motion structure (trajectory, orbit, balance)
-- Predictable behavior under internal or external mass variation
+Dans le cadre NKTg, un **état stable** est une condition dans laquelle la position (`x`), la vitesse (`v`) et la masse (`m`) d’un objet interagissent pour préserver un mouvement contrôlé et durable.
+
+Cette section explique comment les composantes `NKTg₁` et `NKTg₂` déterminent si un objet se déplace **vers** ou **loin de** cette stabilité.
 
 ---
 
-## 🔸 Role of NKTg₁
+## 🔸 Définition de la Stabilité
 
+Un système est considéré **stable** si l’influence nette des deux composantes NKTg conduit à :
+
+* Une dérive ou déviation minimale
+* La conservation de la structure du mouvement (trajectoire, orbite, équilibre)
+* Un comportement prévisible malgré les variations de masse internes ou externes
+
+---
+
+## 🔸 Rôle de NKTg₁
+
+```
 NKTg₁ = x × p
+```
 
-markdown
-Copy
-Edit
+Où :
 
-Where:
-- `x`: Position relative to a reference point
-- `p`: Linear momentum (`m × v`)
+* `x` : Position par rapport à un point de référence
+* `p` : Quantité de mouvement linéaire (`m × v`)
 
-### Interpretation:
+### Interprétation :
 
-- `NKTg₁ < 0` → The system has a **restorative tendency** (pulls object back toward stable state)
-- `NKTg₁ > 0` → The system has a **destabilizing tendency** (pushes object away from stable state)
+* `NKTg₁ < 0` → Tendance **restauratrice** (ramène l’objet vers l’état stable)
+* `NKTg₁ > 0` → Tendance **déstabilisante** (éloigne l’objet de l’état stable)
 
 ---
 
-## 🔸 Role of NKTg₂
+## 🔸 Rôle de NKTg₂
 
+```
 NKTg₂ = (dm/dt) × p
+```
 
-yaml
-Copy
-Edit
+Où :
 
-Where:
-- `dm/dt`: Mass change rate
-- `p`: Linear momentum
+* `dm/dt` : taux de variation de la masse
+* `p` : quantité de mouvement linéaire
 
-### Interpretation:
+### Interprétation :
 
-- `NKTg₂ > 0` → Mass change **supports** motion (amplifies inertia)
-- `NKTg₂ < 0` → Mass change **resists** motion (absorbs inertia)
+* `NKTg₂ > 0` → la variation de masse **favorise** le mouvement
+* `NKTg₂ < 0` → la variation de masse **résiste** au mouvement
 
 ---
 
-## 🧠 Combined Effect
+## 🧠 Effet Combiné
 
-The net tendency of a system is determined by analyzing both NKTg components:
+La tendance nette d’un système est déterminée en analysant les deux composantes NKTg :
 
-| NKTg₁          | NKTg₂          | System Behavior                         |
-|----------------|----------------|------------------------------------------|
-| `> 0`          | `> 0`          | Accelerated instability (both amplify)   |
-| `> 0`          | `< 0`          | Partial compensation (mass resists drift)|
-| `< 0`          | `> 0`          | Restorative but amplified                |
-| `< 0`          | `< 0`          | Stabilizing with inertia damping         |
-
----
-
-## 🎯 Summary
-
-- **Stable state** is achieved when `NKTg₁ < 0` and/or `NKTg₂ < 0`
-- Instability occurs when both are positive
-- The NKTg Law allows for nuanced interpretation of orbital or system behavior in ways that traditional physics cannot
+| NKTg₁ | NKTg₂ | Comportement du système               |
+| ----- | ----- | ------------------------------------- |
+| `> 0` | `> 0` | Instabilité accélérée (amplification) |
+| `> 0` | `< 0` | Compensation partielle                |
+| `< 0` | `> 0` | Restauratrice mais amplifiée          |
+| `< 0` | `< 0` | Stabilisation avec amortissement      |
 
 ---
 
-📘 **Next:** [[Applications in Orbital Mechanics]]
+## 🎯 Résumé
 
-Applications in Celestial Mechanics
-
-The NKTg Law offers a new perspective on classical celestial mechanics by modeling **orbital motion** with variable inertia. This allows scientists to explore dynamics that include mass change, asymmetric momentum distribution, and long-term orbital evolution.
-
----
-
-## 🪐 Planetary Orbits and Mass Drift
-
-In multi-body planetary systems, the NKTg Law provides tools to analyze:
-
-- **Mass redistribution** due to internal core movement or atmospheric escape
-- How planets with varying mass behave differently from Newtonian predictions
-- The **stabilizing or destabilizing** influence of mass evolution on elliptical orbits
+* L’**état stable** est atteint si `NKTg₁ < 0` et/ou `NKTg₂ < 0`
+* L’instabilité survient si les deux sont positifs
+* La loi NKTg permet une interprétation plus fine du comportement orbital ou systémique que la physique classique
 
 ---
 
-## 🛰 Satellite Dynamics and Station-Keeping
+📘 **Prochain :** [[Applications en Mécanique Céleste]]
 
-For artificial satellites:
-- Mass is not constant (fuel depletion, payload drops)
-- The law helps calculate when a satellite is moving **toward instability**
-- Enhances **attitude control** by modeling the internal balance of motion components
+# Applications en Mécanique Céleste
 
----
+La loi NKTg offre une nouvelle perspective sur la mécanique céleste classique en modélisant le **mouvement orbital** avec inertie variable. Cela permet d’explorer :
 
-## ☄ Comet and Asteroid Trajectories
-
-Small celestial bodies like comets undergo:
-
-- Rapid **mass loss** from solar heating
-- Shape and density changes over time
-
-NKTg modeling helps:
-
-- Predict deflection and orbital decay
-- Explain **non-gravitational drift** observed in long-period comets
+* Les effets de la variation de masse
+* La distribution asymétrique du momentum
+* L’évolution orbitale à long terme
 
 ---
 
-## 🌍 Moon and Tidal Effects
+## 🪐 Orbites Planétaires et Dérive de Masse
 
-In planet-moon systems, NKTg can interpret:
+Dans les systèmes planétaires multi-corps, la loi NKTg permet d’analyser :
 
-- Mass transfer due to tidal bulging or lava activity
-- Effects on **orbital synchronization** or escape velocities
-- Historical migration of natural satellites (e.g., Earth–Moon evolution)
-
----
-
-## 🪐 Outer Planet Systems
-
-Voyager 2 and other missions observed:
-
-- Small moons with unexpected mass distributions
-- Orbital stability over long durations
-
-NKTg explains:
-- Why certain moons maintain orbits despite gravitational instability
-- How internal structure affects orbit even in low-mass systems
+* La **redistribution de masse** due aux mouvements internes ou à l’échappement atmosphérique
+* Le comportement des planètes avec masse variable, différent des prédictions newtoniennes
+* L’influence **stabilisante ou déstabilisante** de l’évolution de la masse sur les orbites elliptiques
 
 ---
 
-📘 **Next:** [[NASA Data Verification]]
+## 🛰 Dynamique des Satellites et Maintien de Position
 
-NASA Data Verification
+Pour les satellites artificiels :
 
-To validate the NKTg Law, real-world datasets from NASA missions and other astronomical sources were analyzed. These datasets include orbital elements, mass estimations, and time-based motion data for Earth, the Moon, and outer planets.
-
----
-
-## 🌍 Earth and GRACE Satellite Data
-
-Using data from NASA's **GRACE (Gravity Recovery and Climate Experiment)** program (2002–2023), the following was observed:
-
-- Earth's mass distribution shows **slight seasonal variations** due to ocean and ice movement.
-- NKTg interpolation aligns closely with **momentum shifts** in orbital data.
-- The model successfully predicted that `NKTg₂ ≈ 0` for the Earth over time → confirming **stable inertial behavior**.
+* La masse n’est pas constante (consommation de carburant, largage de charge utile)
+* La loi aide à calculer quand un satellite tend vers **l’instabilité**
+* Améliore le **contrôle d’attitude** en modélisant l’équilibre interne des composantes de mouvement
 
 ---
 
-## 🌕 Moon–Earth System
+## ☄ Trajectoires de Comètes et Astéroïdes
 
-GRACE also confirms:
+Les petits corps célestes comme les comètes subissent :
 
-- The Moon slowly **moves away** from the Earth (~3.8 cm/year).
-- Applying the NKTg Law:
-  - `NKTg₁ < 0` → the system is **restorative**
-  - `NKTg₂ ≈ 0` → mass change is negligible
-- This validates long-term **orbital stability** via internal positional momentum.
+* Une **perte rapide de masse** due au chauffage solaire
+* Des changements de forme et de densité dans le temps
 
----
+La modélisation NKTg permet :
 
-## 🪐 Neptune and Outer Planets
-
-Using data from **Voyager 2 flyby** and planetary databases:
-
-- The calculated inertial behavior of Neptune matched the interpolated position–momentum profile predicted by NKTg.
-- **No external force** was required to explain the deviation observed → it matched the NKTg-based projection.
-- Mass was shown to be **stable**, confirming `NKTg₂ ≈ 0`.
+* De prévoir la déviation et la décroissance orbitale
+* D’expliquer la **dérive non gravitationnelle** observée sur les comètes à longue période
 
 ---
 
-## 📊 Interpolation Accuracy
+## 🌍 Effets Lune–Terre et Tides
 
-In an internal study conducted over:
-- Earth
-- Neptune
-- Jupiter
-- Mars
+Dans les systèmes planètes-lunes, NKTg peut interpréter :
 
-The **NKTg-based interpolation** produced orbital reconstructions with:
-
-| Object   | Deviation from observed (NKTg) |
-|----------|-------------------------------|
-| Earth    | < 0.01%                        |
-| Neptune  | < 0.03%                        |
-| Jupiter  | < 0.05%                        |
-| Mars     | < 0.02%                        |
-
-These results demonstrate **near-zero error** in interpolating motion based on varying inertia.
+* Le transfert de masse dû aux marées ou activité volcanique
+* Les effets sur la **synchronisation orbitale** et la vitesse d’évasion
+* La migration historique des satellites naturels (ex. Terre-Lune)
 
 ---
 
-## 🧾 Sources
+## 🪐 Systèmes des Planètes Extérieures
 
-- NASA GRACE Mission Archives  
-- Voyager 2 planetary flyby logs  
-- JPL Horizons System – Solar System Dynamics  
-- NKTg_Interpolation.xlsx (available in `/docs/`)
+Les missions comme Voyager 2 ont observé :
 
----
+* Des petites lunes avec des distributions de masse inattendues
+* La stabilité orbitale sur de longues durées
 
-📘 **Next:** [[FAQs]]
+NKTg explique :
 
-Frequently Asked Questions (FAQs)
-
-This page addresses the most common questions about the **NKTg Law on Varying Inertia** — its concepts, differences from classical physics, and potential applications.
+* Pourquoi certaines lunes maintiennent leur orbite malgré l’instabilité gravitationnelle
+* Comment la structure interne affecte l’orbite même dans les systèmes à faible masse
 
 ---
 
-## 🔹 Q1: What is the main difference between NKTg and Newtonian mechanics?
+📘 **Prochain :** [[Vérification des Données NASA]]
 
-**Newtonian mechanics** assumes that:
-- Inertia is constant
-- Mass only contributes to force (F = ma)
-- Mass variation is external to motion equations
+# Vérification des Données NASA
 
-**NKTg Law** proposes that:
-- Inertia is dynamic, affected by mass, velocity, and position
-- Mass variation plays a **central role** in determining motion tendencies
-- Internal system parameters can drive stabilization or destabilization
+Pour valider la loi NKTg, des ensembles de données réelles de missions NASA et d’autres sources astronomiques ont été analysés :
+
+* Éléments orbitaux, estimations de masse, données de mouvement temporel pour la Terre, la Lune et les planètes extérieures
 
 ---
 
-## 🔹 Q2: Does NKTg replace Newton’s laws?
-
-No.  
-The NKTg Law is a **supplementary framework** that:
-- Extends Newtonian physics in systems where mass is not constant
-- Is especially useful in celestial mechanics, long-term orbital models, and spacecraft motion
-
-It complements, not contradicts, classical mechanics.
-
----
-
-## 🔹 Q3: What kinds of systems benefit most from NKTg modeling?
-
-- **Satellites and spacecraft** with fuel consumption
-- **Comets and asteroids** with mass shedding
-- **Planetary systems** undergoing accretion or tidal interactions
-- Any system where **mass changes over time** affect trajectory or stability
-
----
-
-## 🔹 Q4: Is the NKTg Law experimentally verified?
-
-Yes — through:
-- Interpolation using **NASA GRACE data** (Earth mass variation)
-- Comparison with **Voyager 2 data** (Neptune, Uranus motion)
-- Data match within **<0.05% error** in orbital prediction
-
-See [[NASA Data Verification]] for more.
-
----
-
-## 🔹 Q5: What does "NKTg" stand for?
-
-"NKTg" is an abbreviation derived from the author's name:  
-**Nguyen Khanh Tung – gravity** (or generalized inertia).  
-It also functions as the symbol for a new **unit of varying inertia**: **NKTm**.
-
----
-
-## 🔹 Q6: Is NKTg relevant to general relativity?
-
-Not directly. NKTg:
-- Works within a **classical mechanics context**
-- Does not require spacetime curvature or relativistic mass
-- May complement relativity in specific cases (e.g., inertial frame behavior), but does not replace Einstein’s theory
-
----
-
-## 🔹 Q7: Can I use this law in my research or simulation?
-
-Yes!  
-The theory is published under a **Creative Commons Attribution 4.0 license**, and you can:
-
-- Cite it using the official DOI links  
-- Adapt or test it in code or physics models  
-- Share your findings with credit
-
----
-
-📘 **Next:** [[References and Further Reading]]
-References and Further Reading
-
-This page lists all key sources, datasets, and references used in the development, testing, and validation of the **NKTg Law on Varying Inertia**.
-
----
-
-## 📘 Official Publications
-
-- Nguyen Khanh Tung (2025). *The NKTg Law on Varying Inertia*.  
-  📌 DOI (Primary – Figshare): [https://doi.org/10.6084/m9.figshare.29481710.v1](https://doi.org/10.6084/m9.figshare.29481710.v1)  
-  📌 DOI (Zenodo mirror): [https://doi.org/10.5281/zenodo.15808498](https://doi.org/10.5281/zenodo.15808498)
-
----
-
-## 🌐 Space and Orbital Data Sources
-
-- NASA GRACE Mission (2002–2023)  
-  [https://grace.jpl.nasa.gov](https://grace.jpl.nasa.gov)
-
-- NASA JPL Horizons System  
-  [https://ssd.jpl.nasa.gov/horizons](https://ssd.jpl.nasa.gov/horizons)
-
-- Voyager 2 Mission Archive  
-  [https://voyager.jpl.nasa.gov](https://voyager.jpl.nasa.gov)
-
----
-
-## 📂 Supporting Documents (Available in Repository)
-
-- `docs/NKTg-Theory.pdf` – Full theoretical formulation
-- `docs/NKTg_Interpolation.xlsx` – NASA-data interpolation spreadsheet
-- `README.md` – Project overview
-- `CITATION.cff` – Citation metadata for academic use
-
----
-
-## 📚 Related Concepts
-
-- Inertial Dynamics in Variable-Mass Systems
-- Orbital Mechanics for Small Bodies (NASA Technical Reports)
-- Newtonian Extensions and Non-Conservative Systems
-- Angular Momentum with Nonuniform Mass Distributions
-
----
-
-## 📄 License and Citation
-
-This work is published under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
-
-For citation guidelines, see [[FAQs]] or the "Cite this repository" button on the repo homepage.
-
----
-
-✅ **Wiki complete!**  
-If you have suggestions or would like to contribute, feel free to fork the repository or open an issue.
+##
