@@ -1,223 +1,233 @@
-Core library & API for the NKTg Law (Nguyen Khanh Tung). Includes core implementation, REST/gRPC API, and 150+ client wrappers
+Core library & API pour la NKTg Law (Nguyen Khanh Tung). Comprend l’implémentation de base, l’API REST/gRPC et plus de 150 wrappers clients
 
----
+📖 Introduction
 
-## 📖 Introduction
+La NKTg Law sur l’inertie variable décrit la tendance au mouvement d’un objet dans l’espace en fonction de la relation entre sa position, sa vitesse et sa masse.
 
-**The NKTg Law on Varying Inertia** describes the movement tendency of an object in space depends on the relationship between its position, velocity, and mass.
-
-```
     NKTg = f(x, v, m)
 
-```
 
-- In which:
+Dans laquelle :
 
-  - x is the position or displacement of the object relative to the reference point.
+x est la position ou le déplacement de l’objet par rapport au point de référence.
 
-  - v is the velocity.
+v est la vitesse.
 
-  - m is the mass.
+m est la masse.
 
-- The movement tendency of the object is determined by the following basic product quantities:
-
-```
+La tendance au mouvement de l’objet est déterminée par les quantités de produit de base suivantes :
 
     NKTg₁ = x × p
-
     NKTg₂ = (dm/dt) × p
 
-```
 
-- In which:
+Dans laquelle :
 
-  - p is the linear momentum, calculated by p = m × v.
+p est la quantité de mouvement linéaire, calculée par p = m × v.
 
-  - dm/dt is the rate of mass change over time.
+dm/dt est le taux de variation de la masse au fil du temps.
 
-  - NKTg₁ is the quantity representing the product of position and momentum.
+NKTg₁ est la quantité représentant le produit position-mouvement.
 
-  - NKTg₂ is the quantity representing the product of mass variation and momentum.
+NKTg₂ est la quantité représentant le produit variation de masse-mouvement.
 
-- The unit of measurement is NKTm, representing a unit of varying inertia.
+L’unité de mesure est NKTm, représentant une unité d’inertie variable.
 
-- The sign and value of the two quantities NKTg₁ and NKTg₂ determine the movement tendency:
+Le signe et la valeur des deux quantités NKTg₁ et NKTg₂ déterminent la tendance au mouvement :
 
-  - If NKTg₁ is positive, the object tends to move away from the stable state.
+Si NKTg₁ est positif, l’objet a tendance à s’éloigner de l’état stable.
 
-  - If NKTg₁ is negative, the object tends to move toward the stable state.
+Si NKTg₁ est négatif, l’objet a tendance à se rapprocher de l’état stable.
 
-  - If NKTg₂ is positive, the mass variation has a supporting effect on the movement.
+Si NKTg₂ est positif, la variation de masse soutient le mouvement.
 
-  - If NKTg₂ is negative, the mass variation has a resisting effect on the movement.
+Si NKTg₂ est négatif, la variation de masse s’oppose au mouvement.
 
-- The stable state in this law is understood as the state in which the position (x), velocity (v), and mass (m) of the object interact with each other to maintain the movement structure, helping the object avoid losing control and preserving its inherent movement pattern.
+L’état stable dans cette loi est compris comme l’état dans lequel la position (x), la vitesse (v) et la masse (m) de l’objet interagissent entre elles pour maintenir la structure du mouvement, permettant à l’objet d’éviter de perdre le contrôle et de préserver son schéma de mouvement intrinsèque.
 
-- **Reference DOI:** These DOIs represent the theoretical foundation and empirical datasets of the NKTg Law on Varying Inertia.
+DOI de référence : Ces DOI représentent les bases théoriques et les jeux de données empiriques de la NKTg Law sur l’inertie variable.
 
-  - [Zenodo: 10.5281/zenodo.15808498](https://doi.org/10.5281/zenodo.15808498)  
-  - [Figshare: 10.6084/m9.figshare.29481710.v1](https://doi.org/10.6084/m9.figshare.29481710.v1) 
+Zenodo: 10.5281/zenodo.15808498
 
----
+Figshare: 10.6084/m9.figshare.29481710.v1
 
-## 📂 Core Components
+📂 Composants principaux
 
-- **Core library**: implementation in C++ / Rust / Go  
-- **API layer**: REST and gRPC interfaces  
-- **Client wrappers**: available for many languages under `clients/`  
-- **Standalone implementations**: 150 language versions under `examples/`
+Bibliothèque de base : implémentation en C++ / Rust / Go
 
----
+Couche API : interfaces REST et gRPC
 
-### 🌌 NKTgUniversa API  
+Wrappers clients : disponibles pour de nombreux langages sous clients/
 
-- **The NKTgUniversa API** is formally established as the **Universal Dynamics Ecosystem** — covering multiple fields, cross-platform, and cross-disciplinary, aimed at modeling variable inertia, dynamic mass interactions, and systemic motion across various domains, applied in the following areas:
+Implémentations autonomes : 150 versions linguistiques sous examples/
 
-  - Planetary dynamics
+🌌 API NKTgUniversa
 
-  - Orbit navigation motion
+L’API NKTgUniversa est formellement établie comme l’Ecosystème de la Dynamique Universelle — couvrant plusieurs domaines, multiplateforme et interdisciplinaire, visant à modéliser l’inertie variable, les interactions de masse dynamique et le mouvement systémique à travers divers domaines, appliqué dans les secteurs suivants :
 
-  - Robotics & control systems
+Dynamique planétaire
 
-  - State-reflective AI
+Navigation orbitale
 
-  - Physics simulation
+Robotique & systèmes de contrôle
 
-This framework can reflect any system with state, velocity, and mass variation — so it is not only mathematically correct but also practically applicable in real-world engineering.
+IA réflexive sur l’état
 
-👉 This recognition is based on:  
+Simulation physique
 
-- **Completed Core & API Layers:** Implemented in C++, Rust, Go, with REST/gRPC interfaces.  
-- **Cross-language adoption:** Over **150 client implementations** across major programming languages.  
-- **The NKTg Law** preserves its invariant mathematical structure across more than **150 programming languages**, applied throughout all domains of science and life. It requires no differentiation or approximation methods, ensuring that its computational results remain precise, reproducible, and consistent across all environments and implementations.
-- **Reference DOI:** These DOIs provide long-term preservation and citation access for all **150 language source** packages and verified implementations of the NKTgLaw Core & API.
-  - Zenodo — [10.5281/zenodo.17190536](https://doi.org/10.5281/zenodo.17190536)  
-  - Figshare — [10.6084/m9.figshare.30195928](https://doi.org/10.6084/m9.figshare.30195928)
-- **Experimental verification:** Consistent results with **planetary and NASA datasets**  Detailed datasets and DOI references for these verifications are provided in the **Foundations** section.
-- **Multi-Platform Deployment** To ensure long-term accessibility, validation, and global interoperability, the API and its repositories are deployed and maintained across 8 major Git platforms:
+Ce cadre peut refléter tout système possédant état, vitesse et variation de masse — il est donc non seulement mathématiquement correct mais aussi applicable en ingénierie réelle.
 
-  - [GitHub](https://github.com/NKTgBase/NKTgBase)  
-  - [GitLab](https://gitlab.com/NKTgLBase/NKTBase)  
-  - [Gitea](https://gitea.com/NKTgBase/NKTgBase)  
-  - [Codeberg](https://codeberg.org/NKTgBase/Base)  
-  - [Launchpad](https://git.launchpad.net/nktgBase)  
-  - [SourceForge](https://sourceforge.net/projects/nktgBase/)  
-  - [Bitbucket](https://bitbucket.org/nktgBase/nktgBase/src/main/)  
-  - [SourceHut](https://git.sr.ht/~nktgBase/NKTgBase)
+👉 Cette reconnaissance repose sur :
 
-- **Dual-license model:** GPL-3.0 (open source) / Commercial license (enterprise-grade).
+Couches Core & API complètes : Implémentées en C++, Rust, Go, avec interfaces REST/gRPC.
 
-- The verification of NKTg Law adheres to open-source reproducibility standards, featuring transparent, multilingual, and cross-platform implementations—accessible anytime, anywhere. It is**empirically validated using NASA’s public datasets**, producing fully consistent results. Implemented in **150 programming languages**, across **8 Git platforms**, **Offline Mode and Online Mode**.
+Adoption multi-langage : Plus de 150 implémentations clientes dans les principaux langages de programmation.
 
-- This distributed presence establishes **NKTgUniversa API** as an **independent, verifiable, and community-accessible Universal Dynamics Ecosystem**, aligned with the principles of **open science, cross-domain collaboration, and global reproducibility**
+La NKTg Law conserve sa structure mathématique invariante dans plus de 150 langages de programmation, appliquée dans tous les domaines de la science et de la vie. Elle ne nécessite ni différentiation ni méthode d’approximation, garantissant des résultats précis, reproductibles et cohérents dans tous les environnements et implémentations.
 
----
+DOI de référence : Ces DOI assurent la préservation à long terme et l’accès à la citation pour tous les 150 packages source et implémentations vérifiées du NKTgLaw Core & API.
 
-## 📖 Documentation
+Zenodo — 10.5281/zenodo.17190536
 
-Detailed documentation for the **NKTgLaw Library** is maintained in the project wiki:
+Figshare — 10.6084/m9.figshare.30195928
 
-- API Guide
-- Global Physics Standard API
-- Library Structure
-- Theory
+Vérification expérimentale : Résultats cohérents avec les données planétaires et NASA. Jeux de données détaillés et références DOI pour ces vérifications sont fournis dans la section Foundations.
 
-Visit the wiki for detailed explanations, examples, and API references.
+Déploiement multiplateforme Pour garantir l’accessibilité à long terme, la validation et l’interopérabilité mondiale, l’API et ses dépôts sont déployés et maintenus sur 8 plateformes Git majeures :
 
----
+GitHub
 
-## 📑 Foundations  
-The `foundations/` directory contains theoretical materials and supporting documents:  
- 
-- **Reference DOI:** Experimental verifications: Summary of Neptune Data Simulated by the NKTg Law Compared to NASA's Published Data (2024)
-  - Zenodo — [10.5281/zenodo.15864091](https://doi.org/10.5281/zenodo.15864091) 
-  - Figshare — [10.6084/m9.figshare.29546048](https://doi.org/10.6084/m9.figshare.29546048)
+GitLab
 
-- **Reference DOI:** Experimental Verification of the NKT Law: Interpolating the Masses of 8 Planets Using NASA Data as of 30–31/12/2024
-  - Zenodo — [10.5281/zenodo.16023879](https://doi.org/10.5281/zenodo.16023879) 
-  - Figshare — [10.6084/m9.figshare.29589431](https://doi.org/10.6084/m9.figshare.29589431)
+Gitea
 
-- **Reference DOI:** NKTm Unit: Measurement Standard for Varying Inertia in the NKTg Law  
-  - Zenodo — [10.5281/zenodo.17162127](https://doi.org/10.5281/zenodo.17162127) 
-  - Figshare — [10.6084/m9.figshare.30166945](https://doi.org/10.6084/m9.figshare.30166945 )
-  - In **NKTg Law**, `NKTg₁` and `NKTg₂` are not independent values but components of a single vector — the generalized variable-inertia vector `NKTg`.
+Codeberg
 
-    - NKTg₁ represents position–momentum interaction. NKTg₂ represents mass-variation–momentum interaction.  
-    - Both coexist in a unified variable-inertia space and share the `NKTm` unit. Thus, their sum is a **vectorial composition**, not a scalar addition.
-    - If orthogonal, the sum follows the Pythagorean theorem: NKTg = √(NKTg₁² + NKTg₂²).
+Launchpad
 
-    - If linear, the sum is simple: NKTg = NKTg₁ + NKTg₂.
-    - NKTg₁ and NKTg₂ fully combine to form NKTg, representing the system’s true variable inertia.
-    - Not only the two quantities NKTg₁ and NKTg₂, but it also asserts that: Both are two aspects of the same physical phenomenon: variable inertia.
+SourceForge
 
-        🔹 NKTg₁ = x × p represents the interaction between position and momentum — that is, spatial inertia.
+Bitbucket
 
-        🔹 NKTg₂ = (dm/dt) × p represents the interaction between mass variation and momentum — that is, dynamic mass inertia.
+SourceHut
 
-        👉 Both are different manifestations of the same physical essence: the change in the motion tendency of a system of objects when the factors x, v, m vary.
+Modèle de double licence : GPL-3.0 (open source) / Licence commerciale (niveau entreprise).
 
-- **Wiki.md**: consolidated wiki documentation  
-- **Index.md**: structured entry point for foundational texts
-  
-👉 Browse the full collection here: **foundations**
+La vérification de la NKTg Law respecte les standards de reproductibilité open-source, avec implémentations transparentes, multilingues et multiplateformes — accessibles à tout moment, partout. Elle est validée empiriquement avec les jeux de données publics de la NASA, produisant des résultats pleinement cohérents. Implémentée dans 150 langages de programmation, sur 8 plateformes Git, Mode Offline et Mode Online.
 
----
+Cette présence distribuée établit l’API NKTgUniversa comme un écosystème dynamique universel indépendant, vérifiable et accessible à la communauté, aligné avec les principes de science ouverte, collaboration inter-domaines et reproductibilité mondiale.
 
-## 🌍 Examples
+📖 Documentation
 
-This repository contains **150 implementations** of the NKTg Law, one for each programming language.  
+La documentation détaillée pour la Bibliothèque NKTgLaw est maintenue dans le wiki du projet :
 
-- All code snippets are stored in the **examples** directory.  
-- Each file is self-contained and demonstrates the calculation of:
+API Guide
 
-```
+Global Physics Standard API
+
+Library Structure
+
+Theory
+
+Consultez le wiki pour des explications détaillées, exemples et références API.
+
+📑 Foundations
+
+Le répertoire foundations/ contient des matériaux théoriques et documents de support :
+
+DOI de référence : Vérifications expérimentales : Résumé des données de Neptune simulées par la NKTg Law comparées aux données publiées par la NASA (2024)
+
+Zenodo — 10.5281/zenodo.15864091
+
+Figshare — 10.6084/m9.figshare.29546048
+
+DOI de référence : Vérification expérimentale de la NKT Law : Interpolation des masses des 8 planètes à partir des données NASA au 30–31/12/2024
+
+Zenodo — 10.5281/zenodo.16023879
+
+Figshare — 10.6084/m9.figshare.29589431
+
+DOI de référence : Unité NKTm : Standard de mesure pour l’inertie variable dans la NKTg Law
+
+Zenodo — 10.5281/zenodo.17162127
+
+Figshare — 10.6084/m9.figshare.30166945
+
+Dans la NKTg Law, NKTg₁ et NKTg₂ ne sont pas des valeurs indépendantes mais composantes d’un vecteur unique — le vecteur général d’inertie variable NKTg.
+
+NKTg₁ représente l’interaction position–momentum. NKTg₂ représente l’interaction variation de masse–momentum.
+
+Les deux coexistent dans un espace d’inertie variable unifié et partagent l’unité NKTm. Leur somme est donc une composition vectorielle, pas une addition scalaire.
+
+Si orthogonales, la somme suit le théorème de Pythagore : NKTg = √(NKTg₁² + NKTg₂²).
+
+Si linéaire, la somme est simple : NKTg = NKTg₁ + NKTg₂.
+
+NKTg₁ et NKTg₂ se combinent entièrement pour former NKTg, représentant la véritable inertie variable du système.
+
+Non seulement ces deux quantités, mais elles expriment toutes deux : Deux aspects du même phénomène physique : l’inertie variable.
+
+🔹 NKTg₁ = x × p représente l’interaction position-momentum — inertie spatiale.
+🔹 NKTg₂ = (dm/dt) × p représente l’interaction variation de masse-momentum — inertie dynamique de masse.
+
+👉 Les deux sont différentes manifestations de la même essence physique : le changement de tendance au mouvement d’un système d’objets lorsque x, v, m varient.
+
+Wiki.md : documentation wiki consolidée
+
+Index.md : point d’entrée structuré pour textes fondamentaux
+
+👉 Parcourez la collection complète ici : foundations
+
+🌍 Exemples
+
+Ce dépôt contient 150 implémentations de la NKTg Law, une pour chaque langage de programmation.
+
+Tous les extraits de code sont stockés dans le répertoire examples.
+
+Chaque fichier est autonome et démontre le calcul de :
 
 p = m * v
-
 NKTg₁ = x * p
-
 NKTg₂ = (dm/dt) * p
 
-```
 
-- Default parameters: `x=2, v=3, m=5, dm_dt=0.1`
+Paramètres par défaut : x=2, v=3, m=5, dm_dt=0.1
 
-👉 Browse the full list here: **examples**
+👉 Parcourez la liste complète ici : examples
 
-**Examples include (but are not limited to):**
+Exemples incluent (mais sans s’y limiter) :
 
-- High-level: Python, Java, JavaScript, C#, Swift, Kotlin, Go, Rust  
-- Scientific: MATLAB, R, Julia, Fortran  
-- Functional: Haskell, Scala, Lisp, Scheme, F#  
-- Systems: C, C++, Assembly, Ada  
-- Web & scripting: PHP, TypeScript, Ruby, Lua, Perl, Bash  
-- Database & query: SQL, PL/SQL  
-- Specialized: Solidity, VHDL, Verilog, Q#, Scratch, Prolog, COBOL  
+Haut niveau : Python, Java, JavaScript, C#, Swift, Kotlin, Go, Rust
 
----
+Scientifiques : MATLAB, R, Julia, Fortran
 
-## ⚡ Quick Start
+Fonctionnels : Haskell, Scala, Lisp, Scheme, F#
 
-- NKTgLaw supports both **offline** and **online** modes.  
-  - For **maximum performance and full precision**, we recommend using the **offline backend**, located at **server/server_offline**
-  - For quick integration or remote access, you can use the **online client wrappers** under **clients/**.
+Systèmes : C, C++, Assembly, Ada
 
-👉 You can also explore the **examples/** directory for 150 standalone implementations.
+Web & scripting : PHP, TypeScript, Ruby, Lua, Perl, Bash
 
-- ### Assembly
+Base de données & requêtes : SQL, PL/SQL
 
-```
-; Assembly: low-level programming
+Spécialisés : Solidity, VHDL, Verilog, Q#, Scratch, Prolog, COBOL
+
+⚡ Démarrage rapide
+
+NKTgLaw supporte les modes offline et online.
+
+Pour performance maximale et précision complète, utilisez le backend offline, situé à server/server_offline
+
+Pour une intégration rapide ou un accès distant, utilisez les wrappers clients online sous clients/.
+
+👉 Explorez également le répertoire examples/ pour 150 implémentations autonomes.
+
+Assembly
+; Assembly : programmation bas niveau
 ; x=2, v=3, m=5, dm_dt=0.1
-; Calculate p=m*v, NKTg1=x*p, NKTg2=dm_dt*p conceptually
+; Calcul conceptuel p=m*v, NKTg1=x*p, NKTg2=dm_dt*p
 
-```
-
-- ### Q#
-
-```
-
-// Q#: quantum programming
+Q#
+# Q#: programmation quantique
 let x=2.0;
 let v=3.0;
 let m=5.0;
@@ -227,67 +237,50 @@ let NKTg1=x*p;
 let NKTg2=dm_dt*p;
 Message($"p={p} NKTg1={NKTg1} NKTg2={NKTg2}");
 
-```
-  
-👉 Use the provided **client wrappers** to quickly test the NKTg Law.
 
-- ### Python Client
+👉 Utilisez les wrappers clients fournis pour tester rapidement la NKTg Law.
 
-```
+Client Python
 cd clients/python
 python NKTgLaw.py
 
-```
 
-Expected output:
-
-```
+Sortie attendue :
 
 p=15.0, NKTg1=30.0, NKTg2=1.5
 
-```
-
-- ### C++ Client
-
-```
-
+Client C++
 cd clients/cpp
 g++ NKTgLaw.cpp -o nktg_client
 ./nktg_client
 
-```
 
-Expected output:
-
-```
+Sortie attendue :
 
 p=15 NKTg1=30 NKTg2=1.5
 
-```
+📜 Licence
 
----
+NKTgLaw est disponible sous un modèle de double licence :
 
-## 📜 License
+1. Licence GPL-3.0 (Open Source)
 
-NKTgLaw is available under a **dual licensing model**:
+Vous pouvez utiliser, modifier et redistribuer NKTgLaw selon les termes de la Licence GPL-3.0
+.
 
+Cette version est gratuite et exige que toute œuvre dérivée soit également publiée sous GPL-3.0.
 
-### 1. GPL-3.0 License (Open Source)
+2. Licence Commerciale (Propriétaire)
 
-- You can use, modify, and redistribute NKTgLaw under the terms of the [GPL-3.0 License](LICENSE).  
-- This version is free and requires that any derivative works are also released under GPL-3.0.
+Pour un usage commercial sans les obligations GPL, une licence commerciale est requise.
 
+Voir LICENSE-commercial.txt
+ pour les conditions.
 
-### 2. Commercial License (Proprietary)
+Contact : Nguyen Khanh Tung (traiphieu.com@gmail.com
+) pour licence et support.
 
-- For commercial use without the GPL obligations, a commercial license is required.  
-- See [LICENSE-commercial.txt](LICENSE-commercial.txt) for terms and conditions.  
-- Contact **Nguyen Khanh Tung** (traiphieu.com@gmail.com) for licensing and support.
+Remarque : Chaque utilisateur doit choisir soit la Licence GPL, soit la Licence Commerciale.
+Combiner les deux pour le même usage n’est pas permis.
 
-**Note:** Each user must choose either the **GPL license** **or** the **Commercial license**.  
-Combining both is not permitted for the same use case.
-
----
-
-🌍 Release v0.2.0  — 📄 [AI Manifest](./ai-manifest.json)
-
+🌍 Release v0.2.0 — 📄 AI Manifest
