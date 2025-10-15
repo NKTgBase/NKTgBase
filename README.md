@@ -3,11 +3,14 @@
 
 **Auteur** : Nguyễn Khánh Tùng  
 **Version originale (anglais)** : NKTgLaw  
-**Version française** : NKTgBase
+**Version française (français)** : NKTgBase
 
 ---
 
-Core library & API pour la NKTg Law (Nguyen Khanh Tung). Inclut l’implémentation de base, REST/gRPC API, et plus de 150 wrappers clients
+# NKTgBase
+
+Core library & API pour la NKTg Law (Nguyễn Khánh Tùng).  
+Inclut l’implémentation de base, REST/gRPC API, et plus de 150 wrappers clients.
 
 ---
 
