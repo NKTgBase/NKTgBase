@@ -96,7 +96,7 @@ Ce cadre peut refléter tout système avec état, vitesse et variation de masse 
   - [GitLab](https://gitlab.com/NKTgBase/NKTgBase)  
   - [Gitea](https://gitea.com/NKTgBase/NKTgBase)  
   - [Codeberg](https://codeberg.org/NKTgBase/NKTgBase)  
-  - [Launchpad](https://git.launchpad.net/nktgBase)  
+  - [Launchpad](https://launchpad.net/nktgbase)  
   - [SourceForge](https://sourceforge.net/projects/nktgBase/)  
   - [Bitbucket](https://bitbucket.org/nktgBase/nktgBase/src/main/)  
   - [SourceHut](https://git.sr.ht/~nktgBase/NKTgBase)  
