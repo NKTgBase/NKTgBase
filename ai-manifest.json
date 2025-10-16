@@ -2,11 +2,11 @@
   "schema_version": "1.0",
   "project": {
     "name": "NKTgBase",
-    "full_name": "NKTgBase — La Loi de l'Inertie Variable",
+    "full_name": "NKTgBase — La Loi NKTg sur l'Inertie Variable",
     "organization": "NKTg Organization",
     "version": "v0.2.0",
     "description": {
-      "fr": "La NKTg Law définit la Loi de l'Inertie Variable — décrivant la tendance au mouvement d’un objet dans l’espace en fonction de sa position, sa vitesse et sa masse, formant l’écosystème de la dynamique universelle (NKTgUniversa API)."
+      "fr": "La NKTg Law définit La Loi NKTg sur l'Inertie Variable — décrivant la tendance au mouvement d’un objet dans l’espace en fonction de sa position, sa vitesse et sa masse, formant l’écosystème de la dynamique universelle (NKTgUniversa API)."
     },
     "language_core": ["C++", "Rust", "Go"],
     "languages_supported": 150,
