@@ -84,7 +84,7 @@
   },
   "core_concepts": {
     "equations": [
-      "NKTg = f(x, v, m) // fonction de position, vitesse, masse",
+      "NKTg = f(x, v, m)",
       "p = m × v",
       "NKTg₁ = x × p",
       "NKTg₂ = (dm/dt) × p"
