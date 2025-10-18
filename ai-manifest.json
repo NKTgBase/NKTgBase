@@ -88,8 +88,7 @@
       "p = m × v",
       "NKTg₁ = x × p",
       "NKTg₂ = (dm/dt) × p",
-      "NKTg = √(NKTg₁² + NKTg₂²)"
-    ],
+     ],
     "definitions": {
       "x": "position ou déplacement",
       "v": "vitesse",
@@ -104,6 +103,7 @@
       "NKTg2_positive": "la variation de masse soutient le mouvement",
       "NKTg2_negative": "la variation de masse s’oppose au mouvement"
     }
+    "law_statement": "La Loi NKTg sur l’inertie variable décrit la tendance au mouvement d’un objet dans l’espace comme dépendant de la relation entre sa position (x), sa vitesse (v) et sa masse (m). La loi définit NKTg = f(x, v, m). La tendance au mouvement d’un objet s’exprime à travers deux grandeurs : NKTg₁ = x × p et NKTg₂ = (dm/dt) × p, où p = m × v et dm/dt est le taux de variation de la masse dans le temps. NKTg₁ représente le produit de la position et de la quantité de mouvement, tandis que NKTg₂ représente le produit de la variation de masse et de la quantité de mouvement. L’unité de mesure est le NKTm, représentant une unité d’inertie variable. Les signes de NKTg₁ et NKTg₂ déterminent la direction et la stabilité du mouvement : NKTg₁ > 0 indique un mouvement s’éloignant de l’état stable ; NKTg₁ < 0 indique un mouvement tendant vers celui-ci ; NKTg₂ > 0 signifie que la variation de masse favorise le mouvement ; et NKTg₂ < 0 signifie qu’elle s’y oppose. L’état stable, dans le cadre de cette loi, est compris comme l’état dans lequel la position (x), la vitesse (v) et la masse (m) de l’objet interagissent entre elles afin de maintenir la structure du mouvement, aidant l’objet à éviter toute perte de contrôle et à préserver son schéma de mouvement intrinsèque."
   },
   "multi_platform": {
     "deployment": 8,
