@@ -134,22 +134,16 @@ Le répertoire `foundations/` contient des matériaux théoriques et documents d
   - Zenodo — [10.5281/zenodo.16023879](https://doi.org/10.5281/zenodo.16023879)  
   - Figshare — [10.6084/m9.figshare.29589431](https://doi.org/10.6084/m9.figshare.29589431)
 
-- **Reference DOI:** Unité NKTm: standard de mesure pour l’inertie variable dans NKTg Law  
+- **DOI de référence :** Unité NKTm : Norme de mesure pour l’inertie variable dans la Loi NKTg  
   - Zenodo — [10.5281/zenodo.17162127](https://doi.org/10.5281/zenodo.17162127)  
   - Figshare — [10.6084/m9.figshare.30166945](https://doi.org/10.6084/m9.figshare.30166945)  
-  - Dans **NKTg Law**, `NKTg₁` et `NKTg₂` ne sont pas des valeurs indépendantes mais des composantes d’un vecteur unique — le vecteur généralisé d’inertie variable `NKTg`.
+  - Dans la **Loi NKTg**, `NKTg₁` et `NKTg₂` ne sont pas des grandeurs indépendantes, mais deux expressions interdépendantes d’un concept unique — l’inertie variable généralisée `NKTg`.
 
-    - NKTg₁ représente l’interaction position–momentum. NKTg₂ représente l’interaction variation de masse–momentum.  
-    - Les deux coexistent dans un espace d’inertie variable unifié et partagent l’unité `NKTm`. Leur somme est donc une **composition vectorielle**, pas une addition scalaire.  
-    - Si orthogonales, la somme suit le théorème de Pythagore: NKTg = √(NKTg₁² + NKTg₂²).  
-    - Si linéaire, la somme est simple: NKTg = NKTg₁ + NKTg₂.  
-    - NKTg₁ et NKTg₂ se combinent pour former NKTg, représentant la véritable inertie variable du système.  
-    - Ces deux quantités sont deux aspects d’un même phénomène physique: inertie variable.
-
-        🔹 NKTg₁ = x × p représente l’interaction position–momentum — inertie spatiale.  
-        🔹 NKTg₂ = (dm/dt) × p représente l’interaction variation de masse–momentum — inertie dynamique de masse.
-
-        👉 Les deux sont des manifestations différentes de la même essence physique: le changement de la tendance au mouvement d’un système d’objets lorsque x, v, m varient.
+    - `NKTg₁` représente l’interaction entre la position et la quantité de mouvement.  
+    - `NKTg₂` représente l’interaction entre la variation de masse et la quantité de mouvement.  
+    - Toutes deux partagent la même unité de mesure `NKTm` et décrivent ensemble l’état complet de l’inertie variable au sein d’un système.  
+    - La loi souligne que `NKTg₁` et `NKTg₂` ne sont pas des entités indépendantes, mais deux aspects d’un même phénomène physique : **l’inertie variable**.  
+    - Elles expriment différentes manifestations d’une même essence fondamentale — la modification de la tendance du mouvement d’un système d’objets lorsque les facteurs **x**, **v** et **m** varient.
 
 - **Wiki.md**: documentation consolidée du wiki  
 - **Index.md**: point d’entrée structuré pour les textes fondamentaux
