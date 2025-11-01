@@ -261,4 +261,4 @@ Combiner les deux n’est pas autorisé pour un même cas d’usage.
 
 ---
 
-🌍 Release v0.2.0 — 📄 [AI Manifest](./ai-manifest.json)
+🌍 Release v0.2.0 
